@@ -1,0 +1,21 @@
+[package]
+name = "protobuf-router"
+version = "0.1.0"
+authors = ["Joe Mooney <joe.mooney@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0.24"
+anyhow = "1.0.40"
+exitfailure = "0.5.1"
+quick-protobuf = "0.8.0"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+rocket = "0.4"
+rocket_contrib = {version = "0.4.6", features = ["json"] }
+rocket_okapi = "0.5.1"
+okapi = "0.4.0"
+serde = "1.0.119"
+structopt = "0.3.21"
+schemars = "0.7.6"
